@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 1.7rem;
-    color: goldenrod;
+    color: #9e7a2d;
 }
 
 h2 {
@@ -30,15 +30,16 @@ header, main, footer, nav {
 
 header, footer, footer a {
     text-align: center;
-    background-color:dimgrey;
+    background-color:#102547;
     color: whitesmoke;
 }
 
 header img {
-    width: 400px;
+    width: 240px;
     height: auto;
     float: right;
 }
+
 
 footer {
     font-size: .7rem;
