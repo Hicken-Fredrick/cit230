@@ -40,7 +40,12 @@ header img {
     float: right;
 }
 
-
 footer {
     font-size: .7rem;
+}
+
+@media only screen and (min-device-width: 400px) {
+    img {
+        width: 25%;
+    }
 }
