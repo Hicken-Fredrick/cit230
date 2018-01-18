@@ -35,7 +35,7 @@ header, footer, footer a {
 }
 
 header img {
-    width: 140px;
+    width: 243px;
     height: auto;
     float: right;
 }
@@ -44,8 +44,3 @@ footer {
     font-size: .7rem;
 }
 
-@media only screen and (min-device-width: 400px) {
-    img {
-        width: 25%;
-    }
-}
