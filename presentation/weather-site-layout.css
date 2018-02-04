@@ -1,0 +1,120 @@
+/* Normalize CSS */
+
+@import '../normalize.css';
+
+
+/* Normal CSS */
+* { margin: 0; box-sizing: border-box; } 
+
+#logo {
+    float: left;
+    width: 165px;
+    display: block;
+    justify-content: space-around;
+}
+
+#heading {
+    font-size: 40px;
+    color: #044068;
+    margin-left: 175px;
+    padding-top: 25px;
+}
+
+#subheading {
+    font-size: 1.45rem;
+    color: #00260e;
+    margin-left: 200px;
+    margin-top: 5px;
+}
+
+#top-nav {
+    background-color: #000c26;
+    color: #fc9928;
+    display: flex;
+    list-style-type: none;
+    overflow: auto;
+    width: 100%;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.nav-link a {
+    display: block;
+    text-align: center;
+    padding: 15px 23px;
+}
+
+.nav-link a:hover {
+    background-color: #021847;    
+}
+
+a:hover, a:visited, a:link, a:active {
+    color:#fc9928;
+    text-decoration:none;
+}
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Contantia, sans-serif;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    padding: 10px;
+}
+
+.town-name {
+    font-size: 3rem;
+    padding-top: 25px;
+}
+
+h1 {
+    font-size: 1.5rem;   
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.section-name {
+    text-align: center;
+}
+
+.forecast {
+    width: 100%;
+    text-align: center;
+}
+
+.weather {
+    display: inline-flex;
+    max-width: 9%;
+    border-style: double;
+    justify-content: space-around;
+}
+
+.article {
+    text-indent: 50px;   
+}
+
+footer {
+    font-size: .7rem;
+    text-align: center;
+    line-height: 175%;
+    background-color:#000c26;
+    color: #fc9928;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+}
