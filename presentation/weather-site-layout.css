@@ -34,7 +34,6 @@
     list-style-type: none;
     overflow: auto;
     width: 100%;
-    justify-content: space-around;
     white-space: nowrap;
 }
 
@@ -48,9 +47,7 @@
 .nav-link a {
     display: block;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 25px;
+    padding: 15px 25px;
 }
 
 .nav-link a:hover {
@@ -95,13 +92,20 @@ h2 {
 .forecast {
     width: 100%;
     text-align: center;
+    white-space: nowrap;
+    overflow: auto;
 }
 
 .weather {
-    display: inline-flex;
-    max-width: 9%;
+    display: inline-block;
+    width: 200px;
+    height: 175px;
+    margin-left: 10px;
     border-style: double;
     justify-content: space-around;
+    background-image: url(trial-sun.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .article {
