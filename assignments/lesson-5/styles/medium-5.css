@@ -99,19 +99,25 @@
     .forecast h3 {
         border: 1px solid #000;
         margin-bottom: 0;
-        padding-bottom: 0;    
+        padding-bottom: 0;
+        background-color: cornsilk;
+        color: #000c26;
+        border-color: #044068;
     }
     .forecast table {
         width: 100%;
-        background-color: cornsilk;
+        background-color: #000c26;
+        color: #fc9928;
         margin-left: auto;
         margin-right: auto;
     }
     .forecast table thead tr th {
         border: 1px solid #000;
+        border-color: #044068;
     }
     .forecast table tbody tr td {
         border: 1px solid #000;
+        border-color: #044068;
     }
     
     article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
