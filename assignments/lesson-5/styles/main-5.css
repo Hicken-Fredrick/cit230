@@ -117,7 +117,11 @@ main figure img { width: 100%; }
 }
 
 .town-article {
-    border: 2px solid #3b3b3b;   
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 .article-head {
     font-weight: bold;
@@ -126,8 +130,8 @@ main figure img { width: 100%; }
 }
 
 .town-article p img {
-  width: 98%; 
-  margin: 5px;
+    width: 98%; 
+    margin: 5px;
 }
 
 footer {
@@ -139,6 +143,6 @@ footer {
     font-size: .7rem;
 }
 footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+footer>p {} 
 
 /* Other Class Selectors */

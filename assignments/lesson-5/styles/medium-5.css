@@ -120,5 +120,10 @@
         border-color: #044068;
     }
     
-    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    .town-article p {
+    }
+    .town-article p img {
+        width: 68%;
+        float: right;
+    }
     }

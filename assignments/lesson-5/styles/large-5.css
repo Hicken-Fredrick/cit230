@@ -66,9 +66,8 @@ main h2 {
     width: 100%;
     font-size: 1.7rem;
 }
-
-    
-    
-  article p.town-article img { width: 29.333%; }
-  
+.town-article p img {
+    width: 38%;
+    float: right;
+}
 }
