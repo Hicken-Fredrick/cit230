@@ -43,9 +43,9 @@
     div#town-image {
     display: inline-block;
     width: 50%;
-    height: 340px;
+    height: 420px;
     background: url(../images/panoramic.jpeg) no-repeat;
-    border: 2px solid #ffff;
+    border: 2px solid #fff;
     background-size: cover;
     float: left;
     }
@@ -69,7 +69,6 @@
     }
     .current picture img {
         display: inline-block;
-        width = 100%;
         vertical-align: middle;
         float: left;
     }
