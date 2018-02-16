@@ -1,0 +1,119 @@
+@media only screen and (min-width: 37.5em) {
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    header h1 {
+    font-size: 2.5rem;
+    position: relative;
+    top: 25px;
+    }
+    
+    header .subheading {
+        font-size: 1.3rem;
+        position: relative;
+        top: 10px;
+    }
+    
+    nav ul.hide {
+        display: block;
+    }
+    
+    ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        display: block;
+        padding : 1.85vw;
+        font-size: 1.2rem;
+    }
+    
+    a:hover, a:visited, a:active, a {
+        color:black;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    figure img {
+        max-width: 50%;
+        float: left;
+        margin-top: 125px;
+    }
+    
+    .weather {
+        display: inline-block;
+        width: 48%;
+    }
+    
+    .current { 
+        display: inline-block;
+        width: 85%;
+        float: right; 
+    }
+    .current .status {
+        display: inline-block;
+        width: 40%;
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+    .current picture img {
+        display: inline-block;
+        vertical-align: middle;
+        float: left;
+    }
+    .highlow {
+        display: inline-block;
+        width: 100%;
+    }
+    .highlow p{
+        display: block;
+        width: 100%;
+        text-align: center;
+        float: right;
+    }
+    .conditions {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    section.forecast { display: inline; }  /* show the 10-day forecast with the medium view and up */
+
+    .forecast {
+        display: inline-block;
+        text-align: center;
+        
+    }
+    .forecast h3 {
+        border: 1px solid #000;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        background-color: cornsilk;
+        color: #000c26;
+        border-color: #044068;
+    }
+    .forecast table {
+        width: 100%;
+        background-color: #000c26;
+        color: #fc9928;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .forecast table thead tr th {
+        border: 1px solid #000;
+        border-color: #044068;
+    }
+    .forecast table tbody tr td {
+        border: 1px solid #000;
+        border-color: #044068;
+    }
+    
+    .town-article p {
+    }
+    .town-article p img {
+        width: 68%;
+        float: right;
+    }
+    }
