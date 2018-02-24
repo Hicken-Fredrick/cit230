@@ -30,7 +30,7 @@
     }
     
     a:hover, a:visited, a:active, a {
-        color:black;
+        color: #fc9928;
         text-decoration: none;
         list-style-type: none;
     }
