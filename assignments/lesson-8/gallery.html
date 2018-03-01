@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Dew Report</title>
+    <meta name="author" content="Fred Hicken">
+    <meta name="description" content="Image Gallery">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet"> 
+    <link href="styles/medium.css" rel="stylesheet"> 
+    <link href="styles/large.css" rel="stylesheet"> 
+</head>
+<body>
+
+    <header>
+        <img src="images/trial-sun.jpg" alt="The site logo">
+        <div>
+            <h1>Dew Report</h1>
+            <div class="subheading">Leave Getting Wet To The Grass</div>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="storm-center.html">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>		
+    </nav>
+    <main id="gallery">
+        <figure>
+            <img src="images/house-on-the-hill/house-on-the-hill-large.jpg" alt="House on a hill"
+                 sizes="100vw" 
+                 srcset="images/house-on-the-hill/house-on-the-hill-small.jpg 300w,
+                 images/house-on-the-hill/house-on-the-hill-medium.jpg 600w,
+                 images/house-on-the-hill/house-on-the-hill-large.jpg 1100w">
+            <figcaption>
+                <strong>House on a Hill</strong><br> original by<a href="https://unsplash.com/photos/v2lJbPVMqr8"> Peter Hammer </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/flower-road/flower-road-large.jpg" alt="Flowering path"
+                 sizes="100vw" 
+                 srcset="images/flower-road/flower-road-small.jpg 300w,
+                 images/flower-road/flower-road-medium.jpg 600w,
+                 images/flower-road/flower-road-large.jpg 1100w">
+            <figcaption>
+                <strong>Walk on The Flower Road</strong><br> original by<a href="https://unsplash.com/photos/SwwoxDZrW5I"> Aaron Brunhofer </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/distant-mountains/distant-mountains-large.jpg" alt="Distant moutains"
+                 sizes="100vw" 
+                 srcset="images/distant-mountains/distant-mountains-small.jpg 300w,
+                 images/distant-mountains/distant-mountains-medium.jpg 600w,
+                 images/distant-mountains/distant-mountains-large.jpg 1100w">
+            <figcaption>
+                <strong>Mountains in The Distance</strong><br> original by<a href="https://unsplash.com/photos/F1oeYBKJsdw"> Keghan Crossland </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/the-winter-is-coming/the-winter-is-coming-large.jpg" alt=" Winter wonderland" sizes="100vw" 
+                 srcset="images/the-winter-is-coming/the-winter-is-coming-small.jpg 300w,
+                 images/the-winter-is-coming/the-winter-is-coming-medium.jpg 600w,
+                 images/the-winter-is-coming/the-winter-is-coming-large.jpg 1100w">
+            <figcaption>
+                <strong>In The Winter of Our Discontent</strong><br> original by<a href="https://unsplash.com/photos/QarnNZVf4SY"> Ricardo Gomez Angel </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/view-of-the-city/view-of-the-city-large.jpg" alt="Distant city view"
+                 sizes="100vw" 
+                 srcset="images/view-of-the-city/view-of-the-city-small.jpg 300w,
+                 images/view-of-the-city/view-of-the-city-medium.jpg 600w,
+                 images/view-of-the-city/view-of-the-city-large.jpg 1100w">
+            <figcaption>
+                <strong>A View of The City</strong><br> original by<a href="https://unsplash.com/photos/3ux6TnSApDs"> Mathew Waters </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/end-of-the-rainbow/end-of-the-rainbow-large.jpg" alt="Coutry trail"
+                 sizes="100vw" 
+                 srcset="images/end-of-the-rainbow/end-of-the-rainbow-small.jpg 300w,
+                 images/end-of-the-rainbow/end-of-the-rainbow-medium.jpg 600w,
+                 images/end-of-the-rainbow/end-of-the-rainbow-large.jpg 1100w">
+            <figcaption>
+                <strong>Take a Stroll to Find The End of The Rainbow</strong><br> original by<a href="https://unsplash.com/photos/b9ehD6WFNSg"> Asa Rodger </a>
+            </figcaption>
+        </figure>
+      
+    </main>  
+  <footer>
+    <aside>
+        
+        123 Main St.<br>
+        Franklin, MU 83454<br>
+        (555)555-5555<br>
+        contact@support.gov<br>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Dew Report | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+</body>
+</html>

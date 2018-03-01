@@ -1,0 +1,119 @@
+@media only screen and (min-width: 37.5em) {
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+    
+    header img {
+        
+    }
+
+    header h1 {
+    font-size: 2.5rem;
+    position: relative;
+    top: 25px;
+    }
+    
+    header .subheading {
+        font-size: 1.3rem;
+        position: relative;
+        top: 10px;
+    }
+    
+    nav ul.hide {
+        display: inline-flex;
+    }
+    
+    ul li {
+        display: inline-flex;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+    
+    a:hover, a:visited, a:active, a {
+        color: #fc9928;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
+    .sideBySide {
+        display: inline-flex;
+    }
+    main figure{
+        display: inline-flex;
+        align-self: center;
+        
+    }
+    .weather {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    
+    .current { 
+        text-align: center;
+    }
+    .highlow {
+    }
+    .highlow p{
+        text-align: center;
+    }
+    .conditions {
+        text-align: center;
+    }
+    
+    .forecast {
+        display: inline-flex;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-self: stretch;
+    }
+    .forecast h3 {
+        flex: 0 1 100%;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #000;
+        background-color: cornsilk;
+        color: #000c26;
+        border-color: #044068;
+    }
+    .forecast table {
+        width: 100%;
+        background-color: #000c26;
+        color: #fc9928;
+        justify-content: center;
+    }
+    .forecast table thead tr th {
+        border: 1px solid #000;
+        border-color: #044068;
+    }
+    .forecast table tbody tr td {
+        border: 1px solid #000;
+        border-color: #044068;
+    }
+    
+    .town-aritcle {
+        align-content: flex-end;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .town-article p {
+
+    }
+    .town-article p img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
