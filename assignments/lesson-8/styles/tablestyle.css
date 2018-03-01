@@ -31,12 +31,18 @@ thead tr:nth-child(2) {
 tbody {
     background-color: #e7f0ed;
 }
+tbody th {
+ font-weight: normal;
+}
 tbody .alt {
     background-color: #e7ffed;
 }
 tbody tr:nth-last-child(3) td:nth-last-child(1) {
     background-color: #628ca6;
     color: white;
+}
+tbody tr:nth-child(5) th {
+    font-style: italic;
 }
 tfoot {
     background-color: #7fb9c2;
