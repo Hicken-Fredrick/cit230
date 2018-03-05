@@ -257,6 +257,10 @@ footer>p {}
     background-color: #fc9928;
 }
 
+#strm-cntr form textarea {
+    width: 100% ;   
+}
+
 /* Thanks Page Specifics*/
 #thankyou h1 {
     font-size: 1.5rem;
