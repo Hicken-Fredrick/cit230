@@ -129,6 +129,9 @@ figure img {
     display: flex;
     flex-direction: column;
 }
+.home-page article img {
+    align-content: flex-end;
+}
     
 }
 
