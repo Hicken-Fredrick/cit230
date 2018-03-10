@@ -58,7 +58,8 @@ function listTowns(jsonObj)
         myArticle.appendChild(myList);
         myArticle.appendChild(myImage);
         
-        //myArticle.className = town[i].name.toLowerCase();
+        if (i % 2 == 0)
+        myArticle.className = "reverse";
         main.appendChild(myArticle);
     }
     

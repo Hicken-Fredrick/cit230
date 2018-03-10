@@ -99,7 +99,37 @@ figure img {
 /*Storm Center Specifics*/    
 #strm-cntr form textarea {
     width: 30%;   
-}    
+} 
+/* Index Page Specifics */
+.home-page {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: stretch;
+    align-items: stretch;
+}
+.home-page article:first-child {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.home-page article:first-child img {
+    margin-top: 3px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.home-page article:first-child h2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+.home-page article:first-child p {
+    grid-row-start: 3;
+}
+.home-page article {
+    display: flex;
+    flex-direction: column;
+}
+    
 }
 
 

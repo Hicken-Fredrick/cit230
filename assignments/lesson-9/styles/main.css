@@ -297,6 +297,11 @@ footer>p {}
     width: 100%;
 }
 
+.home-page article p {
+    margin: 5px;
+    padding: 0;
+}
+
 .home-page h1 {
 
 }
@@ -309,6 +314,13 @@ footer>p {}
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    
+}
+.home-page article ul li {
+    margin-bottom: 4px;
+    text-decoration: underline;
+
 }
 
 .home-page article img {
