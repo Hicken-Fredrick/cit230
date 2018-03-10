@@ -277,4 +277,47 @@ footer>p {}
     text-align: center;
 }
 
+/* Index Page Specifics*/
+.home-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+}
 
+.home-page article {
+    display: grid;
+    margin-bottom: 8px;
+    background-color: #f2ebe3;
+    border: solid 1px #bfbfbf;
+    width: 100%;
+}
+
+.home-page h1 {
+
+}
+
+.home-page h3 {
+
+}
+
+.home-page article ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page article img {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.home-page .franklin img {
+    width: 50px;   
+}
