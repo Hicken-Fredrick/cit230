@@ -26,7 +26,6 @@ function listTowns(jsonObj)
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
-        var divWeather = document.createElement('div');
         var myList = document.createElement('ul');
         var myImage = document.createElement('img');
         
@@ -49,11 +48,7 @@ function listTowns(jsonObj)
         myArticle.appendChild(myH3);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        
-        divWeather.className = town[i].name.toLowerCase();
-        myArticle.appendChild(divWeather);
-        
+        myArticle.appendChild(myPara3);   
         
         myArticle.appendChild(myList);
         myArticle.appendChild(myImage);
