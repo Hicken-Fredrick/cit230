@@ -16,7 +16,7 @@ weatherConditions.onload = function() {
     var forecastFranklin = JSON.parse(weatherForecast.responseText);
     console.log(forecastFranklin);
     
-    document.getElementById('statusImg').src = weatherFranklin.current_observation.icon_url;
+    document.getElementById('statusImg').src = "https://icons-ak.wxug.com/i/c/k/" + weatherFranklin.current_observation.icon + ".gif";
     document.getElementById('status').innerHTML = weatherFranklin.current_observation.weather;
     document.getElementById('temp').innerHTML = weatherFranklin.current_observation.temp_f + "°F";   
     document.getElementById('windSpeed').innerHTML = "Windspeed: " + weatherFranklin.current_observation.wind_mph + "mph";
