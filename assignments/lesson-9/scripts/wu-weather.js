@@ -21,7 +21,7 @@ weatherConditions.onload = function() {
     document.getElementById('temp').innerHTML = weatherFranklin.current_observation.temp_f + "°F";   
     document.getElementById('windSpeed').innerHTML = "Windspeed: " + weatherFranklin.current_observation.wind_mph + "mph";
     document.getElementById('txtWeather').innerHTML = forecastFranklin.forecast.txt_forecast.forecastday["0"].fcttext;
-    document.getElementById('windChill').innerHTML = "Windchill: " + weatherFranklin.current_observation.windchill_f;
+    document.getElementById('windChill').innerHTML = "Windchill: " + weatherFranklin.current_observation.windchill_f + "°F";
     document.getElementById('txtWind').innerHTML = "Winds : " + weatherFranklin.current_observation.wind_string;
     
 }
