@@ -103,7 +103,7 @@ figure img {
 /* Index Page Specifics */
 .home-page {
     display: grid !important;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-content: stretch;
     align-items: stretch;
 }

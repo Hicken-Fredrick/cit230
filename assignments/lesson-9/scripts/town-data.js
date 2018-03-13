@@ -20,6 +20,9 @@ function listTowns(jsonObj)
     
     for (var i = 0; i < town.length; i++)
     {
+        if ( i == 2 )
+            i = 2;
+        else{
         var myArticle = document.createElement('article');
         var myH2 = document.createElement('h2');
         var myH3 = document.createElement('h3');
@@ -53,9 +56,11 @@ function listTowns(jsonObj)
         myArticle.appendChild(myList);
         myArticle.appendChild(myImage);
         
-        if (i % 2 == 0)
+        if (i == 0 || i == 3)
         myArticle.className = "reverse";
+        
         main.appendChild(myArticle);
+        }
     }
     
 }
