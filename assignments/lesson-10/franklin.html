@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather | Dew Report | Where you will grow</title>
+    <meta name="author" content="Fred Hicken">
+    <meta name="description" content="Freanklin Weather Page">
+    <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img src="images/trial-sun.jpg" alt="The site logo">
+    <div>
+        <h1>Dew Report</h1>
+        <div class="subheading">Leave Getting Wet To The Grass</div>
+    </div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="storm-center.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+  <main>
+    <div class="sideBySide">
+        <figure>
+          <img src = "images/franklin-wide/franklin-large.jpeg" alt = "Franklin" sizes = "100vw"
+               srcset = "images/franklin-wide/franklin-small.jpeg 500w,
+                         images/franklin-wide/franklin-large.jpeg 1100w">
+        </figure>
+        <section class="weather">
+            <h2>Franklin</h2>
+            <h3>Weather Summary</h3>
+            <div class="current">
+                <p id="status"></p>
+            <picture>
+                <img id="statusImg" alt = "sky-current">
+            </picture>
+          </div>  
+          <div class="highlow">
+            <p id="temp"></p>  
+            <p id="txtWeather"></p>  
+          </div> 
+          <div class="conditions">
+            <p id="txtWind"></p>  
+            <p id="windSpeed"></p>
+            <p id="windChill"></p>
+          </div>           
+        </section>
+    </div>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+      <article class="town-article">
+        <h3 class="article-head">Franklin Breaks Record</h3>	
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis lobortis sem ut pellentesque. Fusce aliquam ex metus, sollicitudin congue ligula vulputate id. In aliquet lacus lorem, a varius neque egestas quis. Duis varius justo risus, sit amet euismod diam vulputate et. Sed sed sagittis dolor, eget eleifend lorem. Etiam ac scelerisque tortor. Aliquam rutrum, arcu ut posuere venenatis, massa tortor tempor nisl, non porta mauris quam in leo. Nulla feugiat viverra lorem quis ultricies. Pellentesque nec ex neque. Integer nec mollis sapien. Vivamus vitae enim non dolor suscipit efficitur. Nam vestibulum imperdiet massa, quis interdum libero molestie quis. Nullam aliquam ligula orci, vitae tristique enim interdum in. Ut id dui purus. Phasellus scelerisque rutrum fringilla. Mauris facilisis ex risus, pulvinar pharetra risus consequat sit amet.
+        </p>
+          <img src="images/town-large.jpeg" alt="town" sizes = "50vw"
+                 srcset = "images/town-small.jpeg 300w,
+                           images/town-medium.jpeg 500w,
+                           images/town-large.jpeg 800w">
+        <p>
+            Maecenas tempus viverra magna, non porta quam tempus non. Cras eros orci, placerat eu urna vitae, mollis eleifend risus. Phasellus placerat velit magna, a porta quam tincidunt id. Aliquam erat volutpat. Phasellus vitae bibendum ante. Sed eu mollis dui, sed tincidunt lorem. Duis vulputate sit amet massa a porta. Vestibulum porttitor id justo at sollicitudin. Maecenas a magna sapien. Vivamus eu facilisis erat, in molestie quam. Maecenas blandit imperdiet dictum. Nullam ultrices est ut tortor dictum consequat. Nunc at eros mollis, consequat dui at, lobortis purus. 
+        </p>
+      </article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+        
+        123 Main St.<br>
+        Franklin, MU 83454<br>
+        (555)555-5555<br>
+        contact@support.gov<br>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Dew Report | <span id="currentdate"></span></p>
+  </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/wu-weatherFranklin.js"></script>
+
+</body>
+</html>

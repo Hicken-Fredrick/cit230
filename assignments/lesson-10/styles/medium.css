@@ -1,0 +1,157 @@
+@media only screen and (min-width: 37.5em) {
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+nav button { display:none; }  /* hamburger button does not need to be shown */
+    
+header img {
+        
+}
+
+header h1 {
+    font-size: 2.5rem;
+    position: relative;
+    top: 25px;
+}
+    
+header .subheading {
+    font-size: 1.3rem;
+    position: relative;
+    top: 10px;
+}
+    
+nav ul.hide {
+    display: inline-flex;
+}
+
+ul li {
+    display: inline-flex;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    border: none;
+}
+
+a:hover, a:visited, a:active, a {
+    color: #fc9928;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.sideBySide {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sideBySide figure {
+    margin-right: 10px;
+}
+main figure{
+    display: inline-flex;
+    align-self: center;    
+}
+.weather {
+    display: inline-flex;
+    flex-direction: column;
+    width: 99%;
+}
+    
+.current { 
+    text-align: center;
+}
+.highlow {
+}
+.highlow p{
+    text-align: center;
+}
+.conditions {
+    text-align: center;
+}
+    
+.forecast {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 99%;
+    align-self: stretch;
+    margin-left: auto;
+    margin-right: auto;
+}
+.forecast h3 {
+    flex: 0 1 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+    background-color: cornsilk;
+    color: #000c26;
+    border-color: #044068;
+}
+.forecast table {
+    width: 100%;
+    background-color: #000c26;
+    color: #fc9928;
+    justify-content: center;
+}
+.forecast table thead tr th {
+    border: 1px solid #000;
+    border-color: #044068;
+}
+.forecast table tbody tr td {
+    border: 1px solid #000;
+    border-color: #044068;
+}
+    
+.town-aritcle {
+    align-content: flex-end;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.town-article p {
+
+}
+.town-article p img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+    
+#gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+    
+    /*Storm Center Specifics*/ 
+#strm-cntr form textarea {
+    width: 50%;   
+}
+    
+/*index Page Specifics*/
+.home-page article {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+    align-items: center;
+}
+.home-page article img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    vertical-align: middle;
+}
+.home-page .reverse img {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    vertical-align: middle;
+}
+.home-page article p, .home-page article h2, .home-page article h3 {
+    grid-column-start: 2;
+}
+.home-page .reverse p, .home-page .reverse h2, .home-page .reverse h3 {
+    grid-column-start: 1;
+}
+}
+

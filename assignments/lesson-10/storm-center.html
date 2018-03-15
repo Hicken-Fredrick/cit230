@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center | Dew Report</title>
+    <meta name="author" content="Fred Hicken">
+    <meta name="description" content="Storm Center Page">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img src="images/trial-sun.jpg" alt="The site logo">
+        <div>
+            <h1>Dew Report</h1>
+            <div class="subheading">Leave Getting Wet To The Grass</div>
+        </div>
+    </header>
+
+  <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>		
+    </nav>
+    <main id="strm-cntr">
+        
+        <h1>If You Are In Immediate Danger Please Call Emergency Services</h1>
+        
+        <form action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label><span>Full Name:</span><input name="fullname" type="text" placeholder="John Smith" pattern="[a-zA-Z -._]{3,99}" required></label>
+
+                <label><span>Email:</span><input name="email" type="email" placeholder="name@mail.com"></label>
+
+                <label><span>Phone:</span><input name="phone" type="tel" placeholder="5551236547" pattern="[0-9]{10,20}" required></label>
+
+                <label><span>Zip Code:</span><input name="zip" type="number" Required></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label><span>Storm Date:</span><input name="strm-date" type="date"></label>
+
+                <label><span>Storm Type:</span>
+                    <input name="strm-type" type="text" list="storms">
+                    <datalist id="storms">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurrican"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+
+                <label class="strm-svr"><span>Storm Severity: 1 - 10</span><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
+
+                <label><span>Storm Region</span><select name="strm-rgn">
+                    <option value="" disabled selected hidden>Select Region...</option>
+                    <option value="franklin">Franklin</option>
+                    <option value="greenville">Greenville</option>
+                    <option value="springfield">Springfield</option>
+                    </select></label>
+
+                <div class="radio"><label><span>Are You In Danger?</span></label>
+                    <input type="radio" name="strm-dngr" value="y">Yes<br>
+                    <input type="radio" name="strm-dngr" value="m">Maybe<br>
+                    <input type="radio" name="strm-dngr" value="n">No<br></div>
+
+                <label><span>Additional Info</span><textarea name="add-info" rows="10"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Submit" class="submitbutton">
+        </form>
+        
+        
+        
+        
+    </main>  
+    <footer>
+        <aside>
+
+            123 Main St.<br>
+            Franklin, MU 83454<br>
+            (555)555-5555<br>
+            contact@support.gov<br>
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Dew Report | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/rating.js"></script>
+
+</body>
+</html>
