@@ -64,7 +64,10 @@ a:hover, a:visited, a:active, a {
 
 
 /*services Specifics*/
-
+#services div {
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 /*contact Specifics*/
     
