@@ -27,10 +27,35 @@ a:hover, a:visited, a:active, a {
 }
 
 /*home Specifics*/
-    
+#home .action {
+    display: block;
+}
+#home .side-by-side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#home .side-by-side figure {
+    width: 48%;
+}
+#home .side-by-side figure p {
+    font-size: 1rem;
+}
     
 /*tours Specifics*/
-    
+#tours .side-by-side {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#tours .side-by-side figure {
+    width: 48%;
+}
+#tours .side-by-side figure img {
+}
+#tours .side-by-side figure figcaption {
+    font-size: 1.2rem;
+}
     
 /*events Specifics*/
 
@@ -42,4 +67,12 @@ a:hover, a:visited, a:active, a {
 
 
 /*contact Specifics*/
+    
+    
+/*successful Specifics*/
+    
+    
+/*overview Specifics*/
+    
+
 }

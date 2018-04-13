@@ -118,7 +118,11 @@ footer p a, footer p a:visited{
     margin-right: auto;
     color: #341800;
 }
-
+#home .side-by-side figure h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+}
 #home .action a h3 {
     margin: 0;
     padding: 0;
@@ -142,8 +146,11 @@ footer p a, footer p a:visited{
     margin: 0;
     padding: 0;
 }
-
-#tours figure {
+#tours .side-by-side {
+    width: 100%;
+    margin: 0 auto;
+}
+#tours .side-by-side figure {
     margin-top: 2px;
     text-align: center;
     font-size: 4vw;
@@ -152,6 +159,11 @@ footer p a, footer p a:visited{
     margin-left: auto;
     margin-right: auto;
     color: #341800;
+}
+#tours .side-by-side figure h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;    
 }
 #tours figure figcaption {
     margin: 4px auto;   
@@ -213,6 +225,7 @@ footer p a, footer p a:visited{
 #sales .accordion li {
     list-style-type: none;
     border: 2px solid #341800;
+    background-color: #C49268;
     margin-bottom: 15px;
     text-align: center;
     font-size: 1.3rem;
@@ -221,6 +234,11 @@ footer p a, footer p a:visited{
 }
 #sales .accordion li figure {
     display: none;
+}
+#sales .accordion li p {
+    margin: 0;
+    padding: 0;
+    color: #00033a;
 }
 
 /*services Specifics*/
