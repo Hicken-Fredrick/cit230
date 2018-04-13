@@ -36,6 +36,7 @@ nav {
 }
 nav button {
     margin: 5px;
+    width: 33%;
     background-color: #341800;
     color: #C49268;
     border: 2px solid #C49268;
@@ -80,19 +81,167 @@ img {
 }
 
 /*home Specifics*/
+#home figure {
+    text-align: center;
+    font-size: 4vw;
+    border: 3px solid #C49268;
+    width: 97%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #341800;
+}
 
+#home .action a h3 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    border: .5px solid #144C4C;
+    background-color: #001F1F;
+    color: #3F7676;
+}
 
+#home .action a {
+    text-decoration: none;
+}
 
 /*tours Specifics*/
+#tours h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #341800;
+    background-color: #C49268;
+    margin: 0;
+    padding: 0;
+}
 
+#tours figure {
+    margin-top: 2px;
+    text-align: center;
+    font-size: 4vw;
+    border: 3px solid #C49268;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tours .credit {
+    text-align: center;   
+}
 
 /*events Specifics*/
+#events form {
+    text-align: center;
+    align-items: center;
+}
+#events form fieldset {
+    background-color: #341800;
+    color: #C49268;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+}
 
+#events form legend {
+    font-size: 1.3rem;
+    color: #341800;
+    padding: .3em;
+    background-color: #C49268;
+    border: 1px solid #000;
+}
+
+#events form textarea {
+    width: 75%;   
+}
 
 /*sales Specifics*/
-
+#sales h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #341800;
+    background-color: #C49268;
+    margin: 0;
+    padding: 0; 
+}
+#sales .accordion {
+    width: 98%;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sales .accordion li {
+    list-style-type: none;
+    border: 2px solid #341800;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sales .accordion li figure {
+    display: none;
+}
 
 /*services Specifics*/
-
-
+#services h3, #services article {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: #341800;
+}
+tr, th, td {
+    border: 1.5px solid #592E0B;
+    text-align: center;
+    padding: 5px;
+}
+#services article p {
+    border: 1.5px solid #592E0B;  
+}
 /*contact Specifics*/
+#contact h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #341800;
+    background-color: #C49268;
+    margin: 0;
+    padding: 0;    
+}
+#contact iframe {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    height: 300px;
+}
+#contact form {
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+}
+#contact form legend {
+    font-size: 1.3rem;
+    color: #341800;
+    padding: .3em;
+    background-color: #C49268;
+    border: 1px solid #000;
+}
+#contact form textarea {
+    width: 75%;   
+}
+#contact form fieldset {
+    background-color: #341800;
+    color: #C49268;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+}
+/*successful Specifics*/
+#successful article {
+    text-align: center;
+    color: #341800;
+    font-size: 1.2rem;
+}

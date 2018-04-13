@@ -2,6 +2,7 @@
 nav button { display:none; }
 
 nav ul {
+    display: inline-flex;
     justify-content: space-around;
 }
     
@@ -24,4 +25,21 @@ a:hover, a:visited, a:active, a {
     text-decoration: none;
     list-style-type: none;
 }
+
+/*home Specifics*/
+    
+    
+/*tours Specifics*/
+    
+    
+/*events Specifics*/
+
+
+/*sales Specifics*/
+
+
+/*services Specifics*/
+
+
+/*contact Specifics*/
 }

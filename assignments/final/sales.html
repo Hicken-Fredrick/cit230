@@ -24,7 +24,8 @@
 </header>
     
 <nav>
-    <ul id="primaryNav">
+    <button onclick="toggleNavMenu()">&#9776;Menu&#9776;</button>
+    <ul id="primaryNav" class="hide">
         <li><a href="home.html">Home</a></li>
         <li><a href="tours.html">Tours</a></li>
         <li><a href="events.html">Events</a></li>
@@ -34,14 +35,16 @@
     </ul>
 </nav>
  
-<h2>Bikes for Sale or Rent</h2>    
+<h3>Bikes for Sale or Rent</h3>    
     
-<ul>
-    <li>Mountain Bike &verbar; Sale Price&colon; &dollar;200.00 &verbar; Rent Price&colon; &dollar;75.00<figure><img src="images/mountain-bike.jpg"><figcaption>for riding on mountains</figcaption></figure><figcaption></figcaption></li>
-    <li>Road Bike &verbar; Sale Price&colon; &dollar;150.00 &verbar; Rent Price&colon; &dollar;59.00<figure><img src="images/road-bike.jpg"><figcaption>for riding on roads</figcaption></figure><figcaption></figcaption></li> 
-    <li>Cruiser Bike &verbar; Sale Price&colon; &dollar;100.00 &verbar; Rent Price&colon; &dollar;35.00<figure><img src="images/cruiser-bike.jpg"><figcaption>for cruising about</figcaption></figure><figcaption></figcaption></li> 
+<ul class="accordion">
+    <li>Mountain Bike &verbar; Sale Price&colon; &dollar;200.00 &verbar; Rent Price&colon; &dollar;75.00<figure><img src="images/mountain-bike.jpg"><figcaption>for riding on mountains</figcaption></figure></li>
+    <li>Road Bike &verbar; Sale Price&colon; &dollar;150.00 &verbar; Rent Price&colon; &dollar;59.00<figure><img src="images/road-bike.jpg"><figcaption>for riding on roads</figcaption></figure></li> 
+    <li>Cruiser Bike &verbar; Sale Price&colon; &dollar;100.00 &verbar; Rent Price&colon; &dollar;35.00<figure><img src="images/cruiser-bike.jpg"><figcaption>for cruising about</figcaption></figure></li> 
 </ul>
 
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/sale-accordion.js"></script>    
 </body>
 </html>

@@ -24,7 +24,8 @@
     </header>
 
     <nav>
-        <ul id="primaryNav">
+        <button onclick="toggleNavMenu()">&#9776;Menu&#9776;</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="home.html">Home</a></li>
             <li><a href="tours.html">Tours</a></li>
             <li><a href="events.html">Events</a></li>
@@ -34,8 +35,8 @@
         </ul>
     </nav>
 
-    <h2>Service Availible</h2>    
-
+    <h3>Service Availible</h3>    
+    <article>
     <table>
         <thead>
             <tr>
@@ -72,7 +73,8 @@
             <td colspan="3">Last Update 04-12-18</td>
         </tfoot>
     </table>
-
+    </article>
+    
     <article>
         <h3>Additional Info</h3>
         <p><strong>Cleaning </strong>&#45; This will include stripping and reapplying grease to the sprokets and chain, as well as cleaning any rust or dirt buildup on them or the frame.</p>
@@ -81,6 +83,8 @@
         <p><strong>Repair&#43;Replace </strong>&#45; Bike or acessories broken? we got you covered (note this price doesn't include the cost of parts needed for the repair itself) </p>
         <p><strong>Storage Prep </strong>&#45; If you need to put your bike in storage or put it up for the winter make sure your bike is ready. This package will help make sure your bike is ready so it won't be rusted or broken when your ready to enjoy biking again.</p>
     </article>
-    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+<script src="scripts/hamburger.js"></script>
 </body>
 </html>

@@ -24,7 +24,8 @@
 </header>
     
 <nav>
-    <ul id="primaryNav">
+    <button onclick="toggleNavMenu()">&#9776;Menu&#9776;</button>
+    <ul id="primaryNav" class="hide">
         <li><a href="home.html">Home</a></li>
         <li><a href="tours.html">Tours</a></li>
         <li class="active"><a href="events.html">Events</a></li>
@@ -37,7 +38,8 @@
 <article>
     <h2>Upcoming Event</h2>
     <h3>Cycle the Continental Divide</h3>
-    <p>Start Date&colon; Apr 5th  End Date&colon; Apr 25th</p>
+    <p>Start Date&colon; Apr 5th</p>
+    <p>End Date&colon; Apr 25th</p>
     <img src="images/continental-divide.jpg" alt="event map">
     <p>Image provided by <a href="https://gearjunkie.com/worlds-longest-mountain-bike-route-gdmbr-400-miles-longer">Gearjunkie.com</a></p>
 </article>
@@ -47,7 +49,7 @@
 </article>    
 
 <form action="successful.html">
-    <formfield>
+    <fieldset>
        <legend>Personal Information</legend>
         
         <label><p>Full Name</p><input name="fullname" type="text" placeholder="Your Full Name" pattern="[a-zA-Z -._]{3,99}" required></label>
@@ -59,16 +61,17 @@
         <label><p>Date of Birth</p><input name="date-birth" type="date"></label>
         
         <label><p>Home State or Country</p><input name="home" type="text" placeholder="Utah / United States"></label>
-    </formfield>
+    </fieldset>
     
-    <formfield>
+    <fieldset>
         <legend>Additional Information</legend>
         
-        <label><p>Additional Info</p><textarea name="additional-info" rows="10"></textarea></label>
-    </formfield>
+        <label><p>Additional Info or Special Accommodations</p><textarea name="additional-info" rows="10"></textarea></label>
+    </fieldset>
     <input type="submit" value="Submit" class="submitbutton">
 </form>
-    
-    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+<script src="scripts/hamburger.js"></script>    
 </body>
 </html>
