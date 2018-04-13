@@ -100,7 +100,7 @@ footer p {
     padding: .5px;
     text-decoration: none;
 }
-footer p a {
+footer p a, footer p a:visited{
     text-decoration: none;
     color: #3F7676;
 }
