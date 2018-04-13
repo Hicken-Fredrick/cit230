@@ -3,6 +3,9 @@
     font-family: 'Merriweather', serif;
 }
 body {
+    display: flex;
+    min-height: 100vh; 
+    flex-direction: column;
     background-color: #9D6A40;
 }
 header {
@@ -79,6 +82,28 @@ nav ul li a:hover {
 img {
     width: 100%;   
 }
+footer {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #341800;
+    color: #c49268;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: .7rem;
+    padding-top: 5px;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+footer p {
+    margin: .5px;
+    padding: .5px;
+    text-decoration: none;
+}
+footer p a {
+    text-decoration: none;
+    color: #c49268;
+}
 
 /*home Specifics*/
 #home figure {
@@ -133,6 +158,10 @@ img {
 }
 
 /*events Specifics*/
+#events article {
+    text-align: center;
+    color: #341800;
+}
 #events form {
     text-align: center;
     align-items: center;
@@ -195,13 +224,17 @@ img {
     align-items: center;
     color: #341800;
 }
+#services article table {
+    width: 75%;   
+}
 tr, th, td {
     border: 1.5px solid #592E0B;
     text-align: center;
     padding: 5px;
 }
 #services article p {
-    border: 1.5px solid #592E0B;  
+    border: 1.5px solid #592E0B;
+    width: 95%;
 }
 /*contact Specifics*/
 #contact h3 {
