@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke &verbar; Events</title>
+    <link rel="shortcut icon" type="image/png" href="images/mountain-spoke-logo.png">
+    <meta name="author" content="Fred Hicken">
+    <meta name="description" content="The Mountain Spoke events page">   
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+  
+<body id="events">
+<header>
+<img src="images/mountain-spoke-logo.png" alt="The site logo">
+    <div>
+        <h1>The Mountain Spoke</h1>
+        <h2 class="subheading">Adventure Awaits</h2>
+    </div>
+</header>
+    
+<nav>
+    <ul id="primaryNav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    
+<article>
+    <h2>Upcoming Event</h2>
+    <h3>Cycle the Continental Divide</h3>
+    <p>Start Date&colon; Apr 5th  End Date&colon; Apr 25th</p>
+    <img src="images/continental-divide.jpg" alt="event map">
+    <p>Image provided by <a href="https://gearjunkie.com/worlds-longest-mountain-bike-route-gdmbr-400-miles-longer">Gearjunkie.com</a></p>
+</article>
+<article>
+    <p>Costs will vary depending on the length you wish to stay on the route, make sure to plan accordingly for stopping points and fees if you wish to stay in hotels or HOA sites. You will also need to purchase(if you don't already own) a camal backpack to stay hydrated, as well as a regular pack for food and emergency supplies.</p>
+    <p>Requirments include: Food/Rations, Water, Entrance fees for parks, and emergency supplies (a bike is not listed as if you wish you can walk the path as well)</p>
+</article>    
+
+<form action="successful.html">
+    <formfield>
+       <legend>Personal Information</legend>
+        
+        <label><p>Full Name</p><input name="fullname" type="text" placeholder="Your Full Name" pattern="[a-zA-Z -._]{3,99}" required></label>
+        
+        <label><p>Email</p><input name="email" type="email" placeholder="name@mail.com" required></label>
+        
+        <label><p>Phone</p><input name="phone" type="tel" placeholder="5551236547" pattern="[0-9]{10,20}" required></label>
+        
+        <label><p>Date of Birth</p><input name="date-birth" type="date"></label>
+        
+        <label><p>Home State or Country</p><input name="home" type="text" placeholder="Utah / United States"></label>
+    </formfield>
+    
+    <formfield>
+        <legend>Additional Information</legend>
+        
+        <label><p>Additional Info</p><textarea name="additional-info" rows="10"></textarea></label>
+    </formfield>
+    <input type="submit" value="Submit" class="submitbutton">
+</form>
+    
+    
+</body>
+</html>
