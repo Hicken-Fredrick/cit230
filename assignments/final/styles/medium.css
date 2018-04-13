@@ -61,10 +61,11 @@ a:hover, a:visited, a:active, a {
 
 
 /*sales Specifics*/
-
+#sales .accordion li {
+}
 
 /*services Specifics*/
-#services div {
+#services .side-by-side {
     display: flex;
     flex-direction: row-reverse;
 }
