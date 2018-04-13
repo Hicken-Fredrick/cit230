@@ -2,3 +2,97 @@
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
 }
+body {
+    background-color: #9D6A40;
+}
+header {
+    display: inline-flex;
+    width: 100%;
+    background-color: #9D6A40;
+    height: 100px;
+    justify-content: center;
+}
+header img {
+    width: 150px;
+}
+header div {
+    font-size: .7rem;
+    color: #341800;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    background-color: #341800;
+    margin-bottom: 10px;
+    overflow:auto;
+}
+#primaryNav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav button {
+    margin: 5px;
+    background-color: #341800;
+    color: #C49268;
+    border: 2px solid #C49268;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li a {
+    display: inline-flex;
+    background-color: #341800;
+    border: 1px solid #C49268;
+    color: #C49268;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3.0vw;
+    padding: 12px;
+    margin: 3px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+nav ul li.active a {
+    color: #C49268;
+    background-color: #001F1F;
+}
+nav ul li a:checked, nav ul li a:visited {
+    color: #C49268;
+}
+nav ul li a:hover {
+    background-color: #063535;
+    color: #C49268;
+}
+img {
+    width: 100%;   
+}
+
+/*home Specifics*/
+
+
+
+/*tours Specifics*/
+
+
+/*events Specifics*/
+
+
+/*sales Specifics*/
+
+
+/*services Specifics*/
+
+
+/*contact Specifics*/
