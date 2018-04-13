@@ -102,7 +102,7 @@ footer p {
 }
 footer p a {
     text-decoration: none;
-    color: #c49268;
+    color: #3F7676;
 }
 
 /*home Specifics*/
@@ -151,8 +151,11 @@ footer p a {
     width: 98%;
     margin-left: auto;
     margin-right: auto;
+    color: #341800;
 }
-
+#tours figure figcaption {
+    margin: 4px auto;   
+}
 #tours .credit {
     text-align: center;   
 }
@@ -180,9 +183,15 @@ footer p a {
     background-color: #C49268;
     border: 1px solid #000;
 }
-
+#events form label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 250px;
+}
 #events form textarea {
-    width: 75%;   
+    width: 75%;
+    margin: 0 auto;
 }
 
 /*sales Specifics*/
@@ -263,8 +272,15 @@ tr, th, td {
     background-color: #C49268;
     border: 1px solid #000;
 }
+#contact form label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 250px;
+}
 #contact form textarea {
-    width: 75%;   
+    width: 75%;
+    margin: 0px auto;
 }
 #contact form fieldset {
     background-color: #341800;
@@ -277,4 +293,10 @@ tr, th, td {
     text-align: center;
     color: #341800;
     font-size: 1.2rem;
+}
+/*overview Specifics*/
+#overview video {
+    width: 75%;
+    height 350px;
+    margin: 0 auto;
 }

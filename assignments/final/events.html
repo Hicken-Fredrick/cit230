@@ -42,8 +42,6 @@
     <p><strong>End Date</strong>&colon; Apr 25th</p>
     <img src="images/continental-divide.jpg" alt="event map">
     <p>Image provided by <a href="https://gearjunkie.com/worlds-longest-mountain-bike-route-gdmbr-400-miles-longer">Gearjunkie.com</a></p>
-</article>
-<article>
     <p>Costs will vary depending on the length you wish to stay on the route, make sure to plan accordingly for stopping points and fees if you wish to stay in hotels or HOA sites. You will also need to purchase(if you don't already own) a camal backpack to stay hydrated, as well as a regular pack for food and emergency supplies.</p>
     <p>Requirments include: Food/Rations, Water, Entrance fees for parks, and emergency supplies (a bike is not listed as if you wish you can walk the path as well)</p>
 </article>    
@@ -52,25 +50,37 @@
     <fieldset>
        <legend>Personal Information</legend>
         
-        <label><p>Full Name</p><input name="fullname" type="text" placeholder="Your Full Name" pattern="[a-zA-Z -._]{3,99}" required></label>
+        <label><span>Full Name</span><input name="fullname" type="text" placeholder="Your Full Name" pattern="[a-zA-Z -._]{3,99}" required></label>
         
-        <label><p>Email</p><input name="email" type="email" placeholder="name@mail.com" required></label>
+        <label><span>Email</span><input name="email" type="email" placeholder="name@mail.com" required></label>
         
-        <label><p>Phone</p><input name="phone" type="tel" placeholder="5551236547" pattern="[0-9]{10,20}" required></label>
+        <label><span>Phone</span><input name="phone" type="tel" placeholder="5551236547" pattern="[0-9]{10,20}" required></label>
         
-        <label><p>Date of Birth</p><input name="date-birth" type="date"></label>
+        <label><span>Date of Birth</span><input name="date-birth" type="date"></label>
         
-        <label><p>Home State or Country</p><input name="home" type="text" placeholder="Utah / United States"></label>
+        <label><span>Home State or Country</span><input name="home" type="text" placeholder="Utah / United States"></label>
     </fieldset>
     
     <fieldset>
         <legend>Additional Information</legend>
         
-        <label><p>Additional Info or Special Accommodations</p><textarea name="additional-info" rows="10"></textarea></label>
+        <label><span>Additional Info or Special Accommodations</span><br><textarea name="additional-info" rows="10"></textarea></label>
     </fieldset>
     <input type="submit" value="Submit" class="submitbutton">
 </form>
 
+<footer>
+    <aside>
+        <p>3950 Valley Commons Drive</p>
+        <p>Bozeman, MT 59717</p>
+        <p>(555)555-5555</p>
+        <p>contact@support.com</p>
+    </aside>
+    <p class="footer-bar">&copy;All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+    <p><a href="overview.html">Video Overview</a></p>
+</footer>    
+
+<script src="scripts/currentdate.js"></script>    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
 <script src="scripts/hamburger.js"></script>    
 </body>

@@ -41,17 +41,29 @@
     <fieldset>
         <legend>Request Assistance</legend>
         
-        <label><p>Full Name</p><input name="fullname" type="text" placeholder="Your Full Name" pattern="[a-zA-Z -._]{3,99}" required></label>
+        <label><span>Full Name</span><input name="fullname" type="text" placeholder="Your Full Name" pattern="[a-zA-Z -._]{3,99}" required></label>
         
-        <label><p>Additional Info</p><textarea name="additional-info" rows="10"></textarea></label>
+        <label><span>Additional Info</span><textarea name="additional-info" rows="10"></textarea></label>
         
-        <label><p>Email</p><input name="email" type="email" placeholder="name@mail.com" required></label>
+        <label><span>Email</span><input name="email" type="email" placeholder="name@mail.com" required></label>
         
-        <label><p>Phone</p><input name="phone" type="tel" placeholder="5551236547" pattern="[0-9]{10,20}" required></label>
+        <label><span>Phone</span><input name="phone" type="tel" placeholder="5551236547" pattern="[0-9]{10,20}" required></label>
     </fieldset>
     <input type="submit" value="Submit" class="submitbutton">
 </form>
  
+<footer>
+    <aside>
+        <p>3950 Valley Commons Drive</p>
+        <p>Bozeman, MT 59717</p>
+        <p>(555)555-5555</p>
+        <p>contact@support.com</p>
+    </aside>
+    <p class="footer-bar">&copy;All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+    <p><a href="overview.html">Video Overview</a></p>
+</footer>    
+
+<script src="scripts/currentdate.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
 <script src="scripts/hamburger.js"></script>    
 </body>
